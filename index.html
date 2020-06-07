@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Job Application Form</title>
+    <title>Personal Information:</title>
+    <style type="text/css">
+    	body{
+    		font-size: 20px;
+    		color: black;
+            background-color: teal;
+            color: white;
+            
+    	}
+    	table,tr,td{
+    		text-align: center;
+    		padding: 10pxs;
+    	}
+    </style>
+
+</head>
+<script type="text/javascript">
+    function save(){
+    var text3 = document.getElementById('fname').value;
+    console.log(text3);
+    var text4 = document.getElementById('lname').value;
+    console.log(text4);
+     var text5 = document.getElementById('faname').value;
+    console.log(text5);
+    var text6 = document.getElementById('maname').value;
+    console.log(text6);
+     var text7 = document.getElementById('phonenum').value;
+    console.log(text7);
+    var text8 = document.getElementById('mobilenum').value;
+    console.log(text8);
+     var text9 = document.getElementById('dateb').value;
+    console.log(text9);
+    var text10 = document.getElementById('pb').value;
+    console.log(text10);
+     var text11 = document.getElementById('gender1').value;
+    console.log(text11);
+    var text12 = document.getElementById('lk').value;
+    console.log(text12);
+}
+</script>
+<body>
+  <h1 align="center">Job Application form</h1>
+    <hr>
+    <h2><u>Personal Information:</u></h2>
+    <div>
+    	<form name="myform">
+    	  <table width="50%"><br>
+    	    <tr>
+    	    	<td>FirstName*:</td>
+    	    	<td><input type="text" placeholder="FirstName....." oninput="this.className = ''" name="fname" required="" id="fname"></td>
+    	    </tr>
+    	    <tr>
+    	       	<td>MiddleName:</td>
+    	    	<td><input type="text" placeholder="MiddleName....." oninput="this.className = ''" name="mname"></td>
+    	    </tr>
+    	    <tr>
+    	    	<td>LastName*:</td>
+    	    	<td><input type="text" placeholder="LastName....." oninput="this.className = ''" name="lname" required="" id="lname"></td>
+    	    </tr>
+    	    <tr>
+    			<td>Father's Name*:<input type="text" size="30"placeholder="FatherName....." oninput="this.className = ''" name="faname" required="" id="faname"></td>
+    			<td>Mother's Name*::<input type="text" size="30"placeholder="MotherName....." oninput="this.className = ''" name="maname" required="" id="maname"></td>
+                <td>Gardian's Name:<input type="text" size="30"placeholder="GardianName....." oninput="this.className = ''" name="gname"></td>
+    	    </tr>
+    	    <tr>
+    	    	<td colspan="2">Current Address</td>
+    	    	<td colspan="2">Permenent Address</td>
+    	    </tr>
+    	    <tr>
+    	    	<td colspan="2">
+    	    	<textarea rows="15" cols="50"></textarea>
+    	        </td>
+    	        <td colspan="2">
+    	        	<textarea rows="15" cols="50"></textarea>
+    	        </td>
+    	    </tr>
+    	    <tr>
+    	    	<td>Phone Numbers*:</td>
+    	    </tr>
+    	    <tr>
+    	    	<td>Home phone number*:</td>
+    	    	<td><input type="phone" required="" id="phonenum"></td>
+    	    </tr>
+    	    <tr>
+    	    	<td>Mobile Numbers:</td>
+    	    	<td><input type="phone" id="mobilenum"></td>
+    	    </tr>
+    	    <tr>
+    	    	<td>Date of Birth*:</td>
+    	    	<td><input type="Date"required="" id="dateb"></td>
+    	    </tr>
+    	    <tr>
+    	    	<td>Place of Birth*:</td>
+    	    	<td><input type="text" size="30" required="" id="pb"></td>
+    	    </tr>
+    	    <tr>
+    	    	<td required="" id="gender1">Gender*:</td>
+    	    	<td><input type="radio" name="gender" >Male</td>
+    	    	<td><input type="radio" name="gender">Female</td>
+    	    </tr>
+    	    <tr>
+    	    	<td>Educational Qualification*:</td>
+    	    	<td><input type="text" size="30" required="" id="eq"></td>
+    	    	<td>year of passing*:</td>
+    	    	<td><input type="month" name="year" required="" id="yp"></td>
+    	    </tr>
+    	    <tr>
+             <td id="lk">Languages Known</td>
+             <td>
+             	<input type="checkbox" name="Languages">Html
+             </td>
+             <td>
+             	<input type="checkbox" name="Languages">css
+             </td>
+             <td>
+             	<input type="checkbox" name="Languages">js
+             </td>
+              <td>
+             	<input type="checkbox" name="Languages">ts
+             </td>
+              <td>
+             	<input type="checkbox" name="Languages">jqueary
+             </td>
+    	    </tr>
+    	    <tr>
+    	    	<td>About u r self:</td>
+    	    	<td>
+             	<textarea rows="10" cols="40"></textarea>
+                </td>
+    	    </tr>
+    	    <tr>
+    	    	<td>Nationality*:</td>
+    	    	<td>
+             	<select required="" id="nation">
+             		<option value="Indian">India</option>
+             		<option value="Indian">American</option>
+             		<option value="Indian">Others</option>
+             	</select>
+                </td>
+    	    </tr>
+    	    <tr>
+    	    	<td>Adhar card number*:</td>
+    	    	<td><input type="Adhar" size="12" required="" id="adnum"></td>
+    	    	<td>Pan card number*:</td>
+    	    	<td><input type="Pan" size="12" required="" id="pannum"></td>
+    	    </tr>
+    	    <tr>
+    	    	<td>
+    	    		<input type="submit" value="save" formaction="persnol.html" onclick="save();">
+    	    	</td>
+    	    	<td>
+    	    		<input type="submit" value="next" formaction="educatinal.html" onclick="next();">
+    	    	</td>
+    	    </tr>
+    	   </table>                                                                                         
+    	</form>
+    </div>
+</body>
+</html>
